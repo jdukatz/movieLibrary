@@ -1,0 +1,6 @@
+interact/movieIndex/core/MovieIndex.class
+interact/movieIndex/core/MovieIndexer.class
+interact/movieIndex/MovieIndexConfiguration.class
+interact/movieIndex/MovieIndexApplication.class
+interact/movieIndex/resources/MovieResource.class
+interact/movieIndex/api/Movie.class
