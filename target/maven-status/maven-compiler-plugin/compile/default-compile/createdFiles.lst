@@ -3,4 +3,5 @@ interact/movieIndex/core/MovieIndexer.class
 interact/movieIndex/MovieIndexConfiguration.class
 interact/movieIndex/MovieIndexApplication.class
 interact/movieIndex/resources/MovieResource.class
+interact/movieIndex/resources/YearResource.class
 interact/movieIndex/api/Movie.class

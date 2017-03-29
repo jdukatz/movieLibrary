@@ -3,6 +3,7 @@ package interact.movieIndex;
 import interact.movieIndex.core.MovieIndexer;
 import interact.movieIndex.core.MovieIndex;
 import interact.movieIndex.resources.MovieResource;
+import interact.movieIndex.resources.YearResource;
 
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
@@ -36,7 +37,9 @@ public class MovieIndexApplication extends Application<MovieIndexConfiguration> 
             throw new RuntimeException("couldn't read movie database", ioe);
         }
         MovieResource movieResource = new MovieResource(index);
+        YearResource yearResource = new YearResource(index);
         environment.jersey().register(movieResource);
+        environment.jersey().register(yearResource);
     }
 
 }

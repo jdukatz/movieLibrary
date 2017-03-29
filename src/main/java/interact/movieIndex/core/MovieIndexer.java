@@ -10,6 +10,7 @@ import interact.movieIndex.api.Movie;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
+import java.util.ArrayList;
 
 public class MovieIndexer implements MovieIndex {
 	/*
@@ -67,5 +68,16 @@ public class MovieIndexer implements MovieIndex {
 	@Override
 	public void delete(String title) {
 		movies.removeIf(m -> m.getTitle().equals(title) == true);
+	}
+
+	@Override
+	public List<Movie> retrieveYear(Integer year) {
+		List<Movie> moviesForYear = new ArrayList<Movie>();
+		for (Movie m : movies) {
+			if (m.getYear() == year) {
+				moviesForYear.add(m);
+			}
+		}
+		return moviesForYear;
 	}
 }
