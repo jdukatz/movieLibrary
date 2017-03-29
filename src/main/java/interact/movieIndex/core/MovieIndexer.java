@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class MovieIndexer implements MovieIndex {
 	/*
 	Implements the index interface. Responsible for recieving
-	REST commands from the resource. 
+	REST commands from resources.
 	*/
 
 	private List<Movie> movies;
